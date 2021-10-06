@@ -7,7 +7,7 @@
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PBDConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PBDConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GUI_PBD.Properties.Settings.GlobalReference.Default.PBDConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AlumnoTableAdapter" GeneratorDataComponentClassName="AlumnoTableAdapter" Name="Alumno" UserDataComponentName="AlumnoTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AlumnosTableAdapter" GeneratorDataComponentClassName="AlumnosTableAdapter" Name="Alumnos" UserDataComponentName="AlumnosTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="PBDConnectionString (Settings)" DbObjectName="PBD.dbo.Alumno" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
@@ -222,7 +222,7 @@ SELECT idEmpresa, razonSocial FROM Empresa WHERE (idEmpresa = @idEmpresa)</Comma
   <xs:element name="PBDDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="PBDDataSet" msprop:Generator_UserDSName="PBDDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Alumno" msprop:Generator_TableClassName="AlumnoDataTable" msprop:Generator_TableVarName="tableAlumno" msprop:Generator_RowChangedName="AlumnoRowChanged" msprop:Generator_TablePropName="Alumno" msprop:Generator_RowDeletingName="AlumnoRowDeleting" msprop:Generator_RowChangingName="AlumnoRowChanging" msprop:Generator_RowEvHandlerName="AlumnoRowChangeEventHandler" msprop:Generator_RowDeletedName="AlumnoRowDeleted" msprop:Generator_RowClassName="AlumnoRow" msprop:Generator_UserTableName="Alumno" msprop:Generator_RowEvArgName="AlumnoRowChangeEvent">
+        <xs:element name="Alumnos" msprop:Generator_TableClassName="AlumnosDataTable" msprop:Generator_TableVarName="tableAlumnos" msprop:Generator_TablePropName="Alumnos" msprop:Generator_RowDeletingName="AlumnosRowDeleting" msprop:Generator_RowChangingName="AlumnosRowChanging" msprop:Generator_RowEvHandlerName="AlumnosRowChangeEventHandler" msprop:Generator_RowDeletedName="AlumnosRowDeleted" msprop:Generator_UserTableName="Alumnos" msprop:Generator_RowChangedName="AlumnosRowChanged" msprop:Generator_RowEvArgName="AlumnosRowChangeEvent" msprop:Generator_RowClassName="AlumnosRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idAlumno" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidAlumno" msprop:Generator_ColumnPropNameInRow="idAlumno" msprop:Generator_ColumnPropNameInTable="idAlumnoColumn" msprop:Generator_UserColumnName="idAlumno" type="xs:int" />
@@ -271,7 +271,7 @@ SELECT idEmpresa, razonSocial FROM Empresa WHERE (idEmpresa = @idEmpresa)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="AlumnoEmpresa" msprop:Generator_TableClassName="AlumnoEmpresaDataTable" msprop:Generator_TableVarName="tableAlumnoEmpresa" msprop:Generator_RowChangedName="AlumnoEmpresaRowChanged" msprop:Generator_TablePropName="AlumnoEmpresa" msprop:Generator_RowDeletingName="AlumnoEmpresaRowDeleting" msprop:Generator_RowChangingName="AlumnoEmpresaRowChanging" msprop:Generator_RowEvHandlerName="AlumnoEmpresaRowChangeEventHandler" msprop:Generator_RowDeletedName="AlumnoEmpresaRowDeleted" msprop:Generator_RowClassName="AlumnoEmpresaRow" msprop:Generator_UserTableName="AlumnoEmpresa" msprop:Generator_RowEvArgName="AlumnoEmpresaRowChangeEvent">
+        <xs:element name="AlumnoEmpresa" msprop:Generator_TableClassName="AlumnoEmpresaDataTable" msprop:Generator_TableVarName="tableAlumnoEmpresa" msprop:Generator_TablePropName="AlumnoEmpresa" msprop:Generator_RowDeletingName="AlumnoEmpresaRowDeleting" msprop:Generator_RowChangingName="AlumnoEmpresaRowChanging" msprop:Generator_RowEvHandlerName="AlumnoEmpresaRowChangeEventHandler" msprop:Generator_RowDeletedName="AlumnoEmpresaRowDeleted" msprop:Generator_UserTableName="AlumnoEmpresa" msprop:Generator_RowChangedName="AlumnoEmpresaRowChanged" msprop:Generator_RowEvArgName="AlumnoEmpresaRowChangeEvent" msprop:Generator_RowClassName="AlumnoEmpresaRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idAlumnoEmpresa" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidAlumnoEmpresa" msprop:Generator_ColumnPropNameInRow="idAlumnoEmpresa" msprop:Generator_ColumnPropNameInTable="idAlumnoEmpresaColumn" msprop:Generator_UserColumnName="idAlumnoEmpresa" type="xs:int" />
@@ -282,7 +282,7 @@ SELECT idEmpresa, razonSocial FROM Empresa WHERE (idEmpresa = @idEmpresa)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Empresa" msprop:Generator_TableClassName="EmpresaDataTable" msprop:Generator_TableVarName="tableEmpresa" msprop:Generator_RowChangedName="EmpresaRowChanged" msprop:Generator_TablePropName="Empresa" msprop:Generator_RowDeletingName="EmpresaRowDeleting" msprop:Generator_RowChangingName="EmpresaRowChanging" msprop:Generator_RowEvHandlerName="EmpresaRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpresaRowDeleted" msprop:Generator_RowClassName="EmpresaRow" msprop:Generator_UserTableName="Empresa" msprop:Generator_RowEvArgName="EmpresaRowChangeEvent">
+        <xs:element name="Empresa" msprop:Generator_TableClassName="EmpresaDataTable" msprop:Generator_TableVarName="tableEmpresa" msprop:Generator_TablePropName="Empresa" msprop:Generator_RowDeletingName="EmpresaRowDeleting" msprop:Generator_RowChangingName="EmpresaRowChanging" msprop:Generator_RowEvHandlerName="EmpresaRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpresaRowDeleted" msprop:Generator_UserTableName="Empresa" msprop:Generator_RowChangedName="EmpresaRowChanged" msprop:Generator_RowEvArgName="EmpresaRowChangeEvent" msprop:Generator_RowClassName="EmpresaRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="idEmpresa" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnidEmpresa" msprop:Generator_ColumnPropNameInRow="idEmpresa" msprop:Generator_ColumnPropNameInTable="idEmpresaColumn" msprop:Generator_UserColumnName="idEmpresa" type="xs:int" />
@@ -296,7 +296,7 @@ SELECT idEmpresa, razonSocial FROM Empresa WHERE (idEmpresa = @idEmpresa)</Comma
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="vAlumnoEmpresa" msprop:Generator_TableClassName="vAlumnoEmpresaDataTable" msprop:Generator_TableVarName="tablevAlumnoEmpresa" msprop:Generator_RowChangedName="vAlumnoEmpresaRowChanged" msprop:Generator_TablePropName="vAlumnoEmpresa" msprop:Generator_RowDeletingName="vAlumnoEmpresaRowDeleting" msprop:Generator_RowChangingName="vAlumnoEmpresaRowChanging" msprop:Generator_RowEvHandlerName="vAlumnoEmpresaRowChangeEventHandler" msprop:Generator_RowDeletedName="vAlumnoEmpresaRowDeleted" msprop:Generator_RowClassName="vAlumnoEmpresaRow" msprop:Generator_UserTableName="vAlumnoEmpresa" msprop:Generator_RowEvArgName="vAlumnoEmpresaRowChangeEvent">
+        <xs:element name="vAlumnoEmpresa" msprop:Generator_TableClassName="vAlumnoEmpresaDataTable" msprop:Generator_TableVarName="tablevAlumnoEmpresa" msprop:Generator_TablePropName="vAlumnoEmpresa" msprop:Generator_RowDeletingName="vAlumnoEmpresaRowDeleting" msprop:Generator_RowChangingName="vAlumnoEmpresaRowChanging" msprop:Generator_RowEvHandlerName="vAlumnoEmpresaRowChangeEventHandler" msprop:Generator_RowDeletedName="vAlumnoEmpresaRowDeleted" msprop:Generator_UserTableName="vAlumnoEmpresa" msprop:Generator_RowChangedName="vAlumnoEmpresaRowChanged" msprop:Generator_RowEvArgName="vAlumnoEmpresaRowChangeEvent" msprop:Generator_RowClassName="vAlumnoEmpresaRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre">
@@ -338,7 +338,7 @@ SELECT idEmpresa, razonSocial FROM Empresa WHERE (idEmpresa = @idEmpresa)</Comma
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:Alumno" />
+      <xs:selector xpath=".//mstns:Alumnos" />
       <xs:field xpath="mstns:idAlumno" />
     </xs:unique>
     <xs:unique name="AlumnoEmpresa_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
@@ -356,8 +356,8 @@ SELECT idEmpresa, razonSocial FROM Empresa WHERE (idEmpresa = @idEmpresa)</Comma
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_AlumnoEmpresa_Alumno" msdata:parent="Alumno" msdata:child="AlumnoEmpresa" msdata:parentkey="idAlumno" msdata:childkey="idAlumno" msprop:Generator_UserChildTable="AlumnoEmpresa" msprop:Generator_ChildPropName="GetAlumnoEmpresaRows" msprop:Generator_UserRelationName="FK_AlumnoEmpresa_Alumno" msprop:Generator_RelationVarName="relationFK_AlumnoEmpresa_Alumno" msprop:Generator_UserParentTable="Alumno" msprop:Generator_ParentPropName="AlumnoRow" />
-      <msdata:Relationship name="FK_AlumnoEmpresa_Empresa" msdata:parent="Empresa" msdata:child="AlumnoEmpresa" msdata:parentkey="idEmpresa" msdata:childkey="idEmpresa" msprop:Generator_UserChildTable="AlumnoEmpresa" msprop:Generator_ChildPropName="GetAlumnoEmpresaRows" msprop:Generator_UserRelationName="FK_AlumnoEmpresa_Empresa" msprop:Generator_ParentPropName="EmpresaRow" msprop:Generator_RelationVarName="relationFK_AlumnoEmpresa_Empresa" msprop:Generator_UserParentTable="Empresa" />
+      <msdata:Relationship name="FK_AlumnoEmpresa_Alumno" msdata:parent="Alumnos" msdata:child="AlumnoEmpresa" msdata:parentkey="idAlumno" msdata:childkey="idAlumno" msprop:Generator_UserChildTable="AlumnoEmpresa" msprop:Generator_ChildPropName="GetAlumnoEmpresaRows" msprop:Generator_UserRelationName="FK_AlumnoEmpresa_Alumno" msprop:Generator_ParentPropName="AlumnoRow" msprop:Generator_RelationVarName="relationFK_AlumnoEmpresa_Alumno" msprop:Generator_UserParentTable="Alumnos" />
+      <msdata:Relationship name="FK_AlumnoEmpresa_Empresa" msdata:parent="Empresa" msdata:child="AlumnoEmpresa" msdata:parentkey="idEmpresa" msdata:childkey="idEmpresa" msprop:Generator_UserChildTable="AlumnoEmpresa" msprop:Generator_ChildPropName="GetAlumnoEmpresaRows" msprop:Generator_UserRelationName="FK_AlumnoEmpresa_Empresa" msprop:Generator_RelationVarName="relationFK_AlumnoEmpresa_Empresa" msprop:Generator_UserParentTable="Empresa" msprop:Generator_ParentPropName="EmpresaRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
